@@ -6,6 +6,10 @@ Personal portfolio website for Aditya Kumar Jha - AI/ML Engineer, Data Science &
 
 React • TypeScript • GSAP • Three.js • WebGL • HTML • CSS • JavaScript
 
+## 🚀 Live Demo
+
+- [https://aditya-kumar-jha-portfolio.vercel.app](https://aditya-kumar-jha-portfolio.vercel.app)
+
 ## 📄 License
 
 This project is licensed under the Personal Portfolio License (PPL) v1.0.
