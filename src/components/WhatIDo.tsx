@@ -87,21 +87,22 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>AGENTIC AI</h3>
-              <h4>Autonomous Multi-Agent Systems</h4>
+              <h3>AI & MACHINE LEARNING</h3>
+              <h4>Intelligent Systems · Applied AI</h4>
               <p>
-                Designing autonomous agents that perceive, reason, act, and self-correct. Building LangGraph architectures with specialized agents for planning, validation, security analysis, and tool execution.
+                Building intelligent applications using machine learning, deep learning, and LLMs. Exploring agentic AI, multi-agent systems, and ways to turn models into practical, real-world solutions.
               </p>
               <h5>Tech Stack</h5>
               <div className="what-content-flex">
-                <div className="what-tags">LangGraph</div>
-                <div className="what-tags">LLMs</div>
                 <div className="what-tags">Python</div>
+                <div className="what-tags">PyTorch</div>
+                <div className="what-tags">TensorFlow</div>
+                <div className="what-tags">Scikit-learn</div>
+                <div className="what-tags">LLMs</div>
+                <div className="what-tags">Agentic AI</div>
+                <div className="what-tags">NLP</div>
+                <div className="what-tags">Computer Vision</div>
                 <div className="what-tags">FastAPI</div>
-                <div className="what-tags">Groq API</div>
-                <div className="what-tags">Gemini</div>
-                <div className="what-tags">Ollama</div>
-                <div className="what-tags">LangChain</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -125,21 +126,22 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>EVALUATE & SECURE</h3>
-              <h4>AI Safety, Benchmarking & Red-Teaming</h4>
+              <h3>DATA SCIENCE & ANALYTICS</h3>
+              <h4>Data-Driven Insights · Predictive Modeling</h4>
               <p>
-                Building rigorous evaluation benchmarks and adversarial test suites for multi-agent LLM systems. Researching prompt injection defenses, sentinel architectures, and failure-mode analysis.
+                Working with data to uncover patterns, answer meaningful questions, and build predictive models. From data exploration and statistical analysis to feature engineering and visualization, I enjoy turning raw data into actionable insights.
               </p>
               <h5>Tech Stack</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Adversarial Testing</div>
-                <div className="what-tags">Prompt Injection</div>
-                <div className="what-tags">Agent Evaluation</div>
-                <div className="what-tags">Benchmarking</div>
-                <div className="what-tags">SHAP</div>
+                <div className="what-tags">Python</div>
                 <div className="what-tags">SQL</div>
-                <div className="what-tags">XGBoost</div>
-                <div className="what-tags">Sentinel Defense</div>
+                <div className="what-tags">Pandas</div>
+                <div className="what-tags">NumPy</div>
+                <div className="what-tags">Statistics</div>
+                <div className="what-tags">Exploratory Data Analysis</div>
+                <div className="what-tags">Feature Engineering</div>
+                <div className="what-tags">Data Visualization</div>
+                <div className="what-tags">Machine Learning</div>
               </div>
               <div className="what-arrow"></div>
             </div>
