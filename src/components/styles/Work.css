@@ -37,10 +37,27 @@
   border-right: 1px solid #363636;
   flex-shrink: 0;
   gap: 20px;
-  justify-content: space-between;
+  justify-content: flex-start;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  max-height: 100%;
 }
 .work-flex .work-box:nth-child(even) {
   flex-direction: column-reverse;
+}
+/* Custom scrollbar for work cards */
+.work-box::-webkit-scrollbar {
+  width: 4px;
+}
+.work-box::-webkit-scrollbar-track {
+  background: transparent;
+}
+.work-box::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+.work-box::-webkit-scrollbar-thumb:hover {
+  background: #666;
 }
 .work-title {
   justify-content: space-between;
