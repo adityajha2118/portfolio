@@ -150,10 +150,10 @@ const Work = () => {
       ScrollTrigger.create({
         trigger: work,
         start: "top top",
-        end: () => `+=${getScrollAmount()}`,
+        end: () => `+=${getScrollAmount() * 1.35}`,
         pin: true,
         animation: tween,
-        scrub: 0.3,
+        scrub: 0.4,
         invalidateOnRefresh: true,
         anticipatePin: 1,
         id: "work-pin",
