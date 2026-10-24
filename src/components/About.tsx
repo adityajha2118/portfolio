@@ -38,20 +38,20 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Data Science and AI student at IIIT Naya Raipur, building at the intersection of Agentic AI, Multi-Agent Systems, and AI Security.
+          I'm a Data Science & AI student at IIIT Naya Raipur who enjoys building things with AI and figuring out how to make them useful in the real world. I've worked on ML projects and AI-powered applications, and lately, I've been exploring AI agents and multi-agent systems. I like getting hands-on with new ideas, whether it's training a model, building an application, or making the different pieces work together.
         </p>
         <div className="about-details">
           <div className="about-detail-item">
             <span className="about-detail-label">Education</span>
-            <span className="about-detail-value">B.Tech in Data Science & AI · IIIT Naya Raipur (2023–2027)</span>
+            <span className="about-detail-value">
+              B.Tech in Data Science & AI · IIIT Naya Raipur (2023–2027)
+            </span>
           </div>
           <div className="about-detail-item">
-            <span className="about-detail-label">Academic Merit</span>
-            <span className="about-detail-value">CGPA: 8.73 / 10 · Class XII: 84%</span>
-          </div>
-          <div className="about-detail-item">
-            <span className="about-detail-label">Research Focus</span>
-            <span className="about-detail-value">Adversarial Evaluation, Sentinel Defenses & Agent Reliability</span>
+            <span className="about-detail-label">Technical Expertise</span>
+            <span className="about-detail-value">
+              Agentic AI · Artificial Intelligence · Machine Learning · Deep Learning · LLMs · Multi-Agent Systems · NLP · Computer Vision · Data Science · Data Analytics · Python · SQL · API Development · Backend Development · AI Application Development
+            </span>
           </div>
         </div>
       </div>
