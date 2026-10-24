@@ -130,34 +130,6 @@ const Work = () => {
     const flex = flexRef.current;
     if (!work || !flex) return;
 
-    // Prevent GSAP horizontal scroll while a card is still vertically scrollable
-    const boxes = flex.querySelectorAll<HTMLElement>(".work-box");
-    const wheelHandler = (e: WheelEvent) => {
-      const box = e.currentTarget as HTMLElement;
-      const scrollTop = box.scrollTop;
-      const scrollHeight = box.scrollHeight;
-      const clientHeight = box.clientHeight;
-      const isScrollable = scrollHeight > clientHeight + 2; // 2px tolerance
-
-      if (!isScrollable) return; // card fits entirely, let GSAP handle it
-
-      const atTop = scrollTop <= 0;
-      const atBottom = scrollTop + clientHeight >= scrollHeight - 2;
-
-      // Allow GSAP to take over when at the boundary in the scroll direction
-      if (e.deltaY < 0 && atTop) return;
-      if (e.deltaY > 0 && atBottom) return;
-
-      // Card still has room to scroll — block page scroll so GSAP doesn't move
-      e.preventDefault();
-      e.stopPropagation();
-      box.scrollBy({ top: e.deltaY, behavior: "auto" });
-    };
-
-    boxes.forEach((box) =>
-      box.addEventListener("wheel", wheelHandler, { passive: false })
-    );
-
     const ctx = gsap.context(() => {
       // Dynamic total horizontal distance based on actual card layout
       const getScrollAmount = () => {
@@ -181,7 +153,7 @@ const Work = () => {
         end: () => `+=${getScrollAmount()}`,
         pin: true,
         animation: tween,
-        scrub: 1,
+        scrub: 0.3,
         invalidateOnRefresh: true,
         anticipatePin: 1,
         id: "work-pin",
@@ -194,9 +166,6 @@ const Work = () => {
 
     return () => {
       window.removeEventListener("load", handleLoad);
-      boxes.forEach((box) =>
-        box.removeEventListener("wheel", wheelHandler)
-      );
       ctx.revert();
     };
   }, []);
