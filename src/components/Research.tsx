@@ -1,9 +1,4 @@
-import { useEffect, useRef } from "react";
 import "./styles/Research.css";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const researchPapers = [
   {
@@ -36,39 +31,11 @@ const researchPapers = [
 ];
 
 const Research = () => {
-  const researchRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const research = researchRef.current;
-    if (!research) return;
-
-    const ctx = gsap.context(() => {
-      gsap.fromTo(
-        research,
-        { opacity: 0, y: 50 },
-        {
-          opacity: 1,
-          y: 0,
-          ease: "power3.out",
-          duration: 1,
-          scrollTrigger: {
-            trigger: research,
-            start: "top 70%",
-            toggleActions: "play none none reverse",
-          },
-        }
-      );
-    });
-
-    return () => ctx.revert();
-  }, []);
-
   return (
-    <div className="research-section section-container" id="research" ref={researchRef}>
+    <div className="research-section section-container" id="research">
       <div className="research-container">
         <h2 className="title">
-          Research <span>&</span>
-          <br /> Publications
+          Research <span>&</span> Publications
         </h2>
 
         <div className="research-grid">
