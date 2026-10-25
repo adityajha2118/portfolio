@@ -4,18 +4,6 @@ import { TbNotes } from "react-icons/tb";
 import { useEffect } from "react";
 import HoverLinks from "./HoverLinks";
 
-const LeetCodeIcon = () => (
-  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 4.964 3.385c.309.012.62-.007.92-.058a5.643 5.643 0 0 0 2.242-.897l3.708-3.794a1.444 1.444 0 1 0-2.022-2.062L8.44 16.716a3.24 3.24 0 0 1-1.341.564 3.197 3.197 0 0 1-1.465-.083 3.09 3.09 0 0 1-1.579-1.042 3.144 3.144 0 0 1-.587-1.748c-.015-.494.084-.984.288-1.436a3.178 3.178 0 0 1 .737-1.127l3.82-4.089 4.908-5.323a1.444 1.444 0 0 0-1.049-2.46z"/>
-  </svg>
-);
-
-const CodeforcesIcon = () => (
-  <svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M4.5 7.5a1.5 1.5 0 0 1 1.5 1.5v10.5a1.5 1.5 0 0 1-3 0V9a1.5 1.5 0 0 1 1.5-1.5zm7.5-4.5a1.5 1.5 0 0 1 1.5 1.5v15a1.5 1.5 0 0 1-3 0v-15A1.5 1.5 0 0 1 12 3zm7.5 9a1.5 1.5 0 0 1 1.5 1.5v6a1.5 1.5 0 0 1-3 0v-6a1.5 1.5 0 0 1 1.5-1.5z"/>
-  </svg>
-);
-
 const SocialIcons = () => {
   useEffect(() => {
     const social = document.getElementById("social") as HTMLElement;
@@ -85,18 +73,8 @@ const SocialIcons = () => {
             <FaLinkedinIn />
           </a>
         </span>
-        <span>
-          <a href="https://leetcode.com/u/FfjaX06eax/" target="_blank" rel="noreferrer" title="LeetCode">
-            <LeetCodeIcon />
-          </a>
-        </span>
-        <span>
-          <a href="https://codeforces.com" target="_blank" rel="noreferrer" title="Codeforces">
-            <CodeforcesIcon />
-          </a>
-        </span>
       </div>
-      <a className="resume-button" href="https://drive.google.com/file/d/14SDLU7YV6z8lVvDNB5zWWEomXxuE-Z3B/view" target="_blank" rel="noreferrer">
+      <a className="resume-button" href="https://drive.google.com/file/d/1wQy9U5nBBWGpCiJhiea6C3k39Wy33TSh/view?usp=sharing" target="_blank" rel="noreferrer">
         <HoverLinks text="RESUME" />
         <span>
           <TbNotes />

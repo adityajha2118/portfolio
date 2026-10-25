@@ -73,24 +73,6 @@ const Contact = () => {
             >
               Linkedin <MdArrowOutward />
             </a>
-            <a
-              href="https://leetcode.com/u/FfjaX06eax/"
-              target="_blank"
-              rel="noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              LeetCode <MdArrowOutward />
-            </a>
-            <a
-              href="https://codeforces.com"
-              target="_blank"
-              rel="noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Codeforces <MdArrowOutward />
-            </a>
           </div>
           <div className="contact-box">
             <h2>
